@@ -1,0 +1,234 @@
+.header {
+    background-color: #ff8c00;
+    color: white;
+  }
+  
+  .actions .btn-warning {
+    width: 100px;
+  }
+  
+  .selection-period .card {
+    width: 150px;
+    margin: 10px;
+  }
+  .team_card:before {
+    height: 212px;
+    border-radius:0px 0px 34px 34px;
+  }
+  .team_card:after{
+    background-image: unset;
+  }
+  .task-hall .card {
+    width: 150px;
+    margin: 10px;
+  }
+  .team_details_top{
+    color: #fff;
+  }
+  .team_details_top p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .team_details_top p:first-of-type{
+    margin-top: 0px;
+  }
+  .invite_code{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .invite_code p{
+    margin-bottom: 0px;
+  }
+  #inviteCode, #inviteLink {
+    width: 100%;
+    background: #6b6ed329;
+    padding: 4px 10px;
+    border-radius: 40px;
+    text-wrap: nowrap;
+    overflow: hidden;
+  }
+  .team_details_top .copy_btn{
+    background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    color: #fff;
+    font-size: 13px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 3px 15px;
+  }
+  .team_details_top p{
+    font-size: 13px;
+    color: #fff;
+  }
+  .team_details_top h5{
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  .team-actions{
+    background: linear-gradient(to top,#5ee7df 0%,#b490ca 100%);
+    padding-bottom: 65px !important;
+  }
+  .team_card_action {
+    background: #e7e7ed;
+    border-radius: 34px 34px 0px 0px;
+    margin-top: -35px;
+    margin-bottom: 50px;
+}
+  .team_details_container{
+    background: #f4e7e7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .team_details_container .recharge_data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .team_details_container .account_info p{
+    font-size: 14px;
+    color: #09123480;
+  }
+  .team_details_container .account_info p span{
+    color: #000;
+  }
+  .team_details_container .recharge_data .data_item{
+    text-align: center;
+  }
+  .team_details_container .recharge_data .data_item .data_lebel p{
+    font-size: 11px;
+    margin-bottom: 2px;
+    color: #09123480;
+  }
+  .team_details_container .joining-time{
+    text-align: right;
+  }
+  .team_details_container .joining-time p{
+    font-size: 11px;
+    color: #09123480;
+    margin-bottom: 0px;
+  }
+  .team_blnc_details{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 35px;
+    gap: 10px;
+  }
+  .team_blnc_details .item{
+    background-color: #0000005c;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .team_blnc_details .item div{
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .team_card_action .team-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .team_card_action .team-card .team-item:nth-child(1) {
+    background-image: linear-gradient(-225deg,#22e1ff 0%,#1d8fe1 48%,#625eb1 100%);
+  }
+  .team_card_action .team-card .team-item:nth-child(2) {
+    background-image: linear-gradient(-225deg,#ac32e4 0%,#7918f2 48%,#4801ff 100%);
+  }
+  .team_card_action .team-card .team-item:nth-child(3) {
+    background-image: linear-gradient(-225deg,#ff3cac 0%,#562b7c 52%,#2b86c5 100%);
+  }
+
+  .team_card_action .team-card .team-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  .team_card_action .team-card .team-item .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    min-width: 100%;
+    text-align: center;
+    border-radius: 28px;
+    line-height: 17px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background: #000;
+    box-shadow: var(--shadow);
+  }
+ 
+  .team_card_action .team-card .team-item .level-name {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .team_card_action .team-card .team-item .level-name .level-num {
+    position: absolute;
+    transform: rotate(45deg);
+    padding: 2px 40px;
+    right: -36px;
+    top: 8px;
+    background: linear-gradient(60deg, #fcecb9, #efc26f);
+    color: #000;
+    font-weight: 700;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .background_icon_card {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(10deg);
+    font-size: 100px;
+    opacity: .4;
+}
+  .background_icon_card{
+      --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1em' height='1em' xmlns='http://www.w3.org/2000/svg' %3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='m3 7l2 13h14l2-13l-5 3l-4-6l-4 6z'/%3E%3Ccircle cx='12' cy='14' r='2'/%3E%3C/g%3E%3C/svg%3E");
+      mask: var(--un-icon) no-repeat;
+      mask-size: 100% 100%;
+      background-color: currentColor;
+      width: 1em;
+      height: 1em;
+  }
+  .team_card_action .team-card .level-content {
+    background: rgba(0,0,0,.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.team_card_action .team-card .level-content div{
+  font-size: 12.5px;
+}
+  .footer {
+    background-color: #ff8c00;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .footer .btn-light {
+    width: 100px;
+  }
+  

@@ -1,0 +1,83 @@
+/* Announcement.css */
+.announcement {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); /* Safari and older browsers */
+    padding: 20px;
+    background-color: #fff2f1;
+    border: 2px solid rgb(255, 150, 150);
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Safari and older browsers */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Safari and older browsers */
+    z-index: 2000;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out; /* Safari and older browsers */
+    opacity: 0;
+    width: 460px;
+    max-width: 90%; /* Ensures better responsiveness on small screens */
+}
+
+.anouncement_title {
+    text-align: center;
+}
+
+.announcement.show {
+    display: block; /* Show the announcement */
+    opacity: 1;
+}
+
+.anouncement_title h4 {
+    font-weight: 500;
+}
+
+.message-content {
+    margin-bottom: 10px;
+    height: 240px;
+    background-color: #fff;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Safari and older browsers */
+    border-top: 4px solid #f00;
+}
+
+.message-content p {
+    font-size: 13px;
+    color: #000;
+}
+
+.buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Safari and older browsers */
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s; /* Safari and older browsers */
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a hover effect for better UX */
+}
+
+.color-yellow {
+    color: #c2c203;
+}
+
+@media only screen and (max-width: 470px) {
+    .announcement {
+        max-width: 320px;
+    }
+}

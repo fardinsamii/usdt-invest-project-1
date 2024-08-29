@@ -1,0 +1,50 @@
+/* Ensure pseudo-elements have proper fallback */
+.account_card::before,
+.account_card::after {
+    background: none; /* 'unset' might not be supported in older browsers */
+    height: auto; /* Use 'auto' instead of 'unset' for better compatibility */
+}
+
+/* Header background color */
+.account_card .header {
+    background-color: #C90000;
+}
+
+/* Container card with relative positioning and rounded corners */
+.account-actions .container-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px; /* Safari and older browsers */
+    -moz-border-radius: 15px; /* Older Firefox */
+}
+
+/* Pseudo-element for background image */
+.account-actions .container-card:before {
+    content: "";
+    position: absolute;
+    bottom: -94px;
+    right: -108px;
+    background: url(../images/balance-c1156b30.png) center no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; /* Safari 5-6 */
+    -moz-background-size: 100% 100%; /* Older Firefox */
+    width: 367px;
+    height: 316px;
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4); /* Safari and older browsers */
+    -moz-transform: scale(0.4); /* Older Firefox */
+    -ms-transform: scale(0.4); /* Older IE */
+}
+
+/* Title styling */
+.account-actions .title {
+    font-size: 13px;
+    color: rgba(1, 11, 46, 0.5);
+    margin-bottom: 0;
+}
+
+/* Red color class */
+.color-red {
+    color: #C90000;
+}

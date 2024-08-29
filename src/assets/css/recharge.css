@@ -1,0 +1,176 @@
+/* Container for QR code section */
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the QR code */
+.qr-code {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+}
+
+/* Details section below the QR code */
+.details-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Header for the details section */
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Icon for USDT */
+.usdt-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Box containing the address */
+.address-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebeffb;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style for the address text */
+.address {
+  font-size: 14px;
+  word-break: break-all;
+}
+
+/* Button for copying address */
+.recharge-actions .copy-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 3.5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Notice text */
+.notice {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Warning text */
+.warning {
+  color: #f00;
+}
+
+/* Recharge button */
+.recharge-button {
+  background-color: #C90000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: #fff;
+  width: 100%;
+}
+
+/* Container for recharge actions */
+.recharge-actions .container_box {
+  border-radius: 15px;
+  background: #fff;
+}
+
+/* List of recharge methods */
+.recharge_method_list {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #666;
+  border-bottom: 1px dotted #999;
+  padding: 10px 0;
+}
+
+.recharge_method_list:last-of-type {
+  border-bottom: 0;
+}
+
+/* Label for recharge methods */
+.recharge_method_list .rechage_method_label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Image inside recharge method label */
+.recharge_method_list .rechage_method_label img {
+  width: 25px;
+}
+
+/* Label for recharge logos */
+.recharge_logo_label {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Image inside recharge logo label */
+.recharge-actions .recharge_logo_label img {
+  width: 25px;
+  border-radius: 20px;
+}
+
+/* Label for recharge actions */
+.recharge-actions .recharge_label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Image inside recharge label */
+.recharge-actions .recharge_label img {
+  width: 25px;
+}
+
+/* Text inside recharge label */
+.recharge-actions .recharge_label span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Address text */
+.adress_txt {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* Info text for recharge */
+.recharge_info_text{
+  margin-bottom: 135px;
+}
+.recharge_info_text p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* Company logo */
+.company_logo {
+  max-width: 60px;
+}

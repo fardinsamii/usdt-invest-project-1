@@ -1,0 +1,24 @@
+.count_header {
+    background: linear-gradient(to bottom,#323232 0%,#3f3f3f 40%,#1c1c1c 150%),linear-gradient(to top,rgba(255,255,255,.4) 0%,rgba(0,0,0,.25) 200%)#000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 215px;
+    margin: 0 auto;
+}
+.task_count p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.task-actions {
+    background-color: #e7e7ed;
+    z-index: 2;
+    border-radius: 30px 30px;
+}
+.tasks .vip_list_item .price{
+    background: #ed1c28;
+}

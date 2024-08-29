@@ -1,0 +1,115 @@
+/* Financial Actions Card */
+.finiancial-actions .container-card {
+    border-radius: 15px;
+    -webkit-border-radius: 15px; /* Safari and older browsers */
+    background-color: #fff;
+}
+
+/* No Data Text */
+.no_data {
+    font-size: 12px;
+    color: #c90000;
+}
+
+/* Active Nav Link Styling */
+.finiancial-actions .nav-tabs .nav-link.active {
+    color: #c90000;
+}
+
+/* Active Nav Link:after Pseudo Element */
+.finiancial-actions .nav-tabs .nav-link.active::after {
+    left: 47px;
+    background-color: #c90000;
+    -webkit-background-color: #c90000; /* Safari and older browsers */
+}
+
+.finiancial-actions .nav-tabs .nav-link.withdraw-link.active::after {
+    left: 68px;
+    background-color: #c90000;
+    -webkit-background-color: #c90000; /* Safari and older browsers */
+}
+
+/* Notice Wrapper */
+.notice_wrapp {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px dashed #999;
+    border-radius: 10px;
+    -webkit-border-radius: 10px; /* Safari and older browsers */
+    background-color: #efefef;
+    padding: 15px;
+    color: #999;
+    text-decoration: none;
+}
+
+/* Notice Title */
+.notice_wrapp .notice-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Notice Date and Time */
+.notice_wrapp .notice_date_time {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+/* Notice Content Wrapper */
+.notice_content_wrapp .notice-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notice_content_wrapp .notice_date_time {
+    color: #999;
+    font-size: 13px;
+}
+
+/* Notice Details */
+.notice_details p {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+/* Financial Record */
+.financial_record {
+	background: #ededed;
+	padding: 10px 5px;
+	border-radius: 10px;
+}
+.financial_record .financial_lebel {
+    font-size: 14px;
+}
+
+.financial_record .date {
+    font-size: 11px;
+    color: #999;
+}
+
+.financial_record .record_amount p {
+    font-size: 13px;
+}
+
+/* Text Colors */
+.text-green {
+    color: #4ade80;
+}
+
+.text-red {
+    color: red;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 400px) {
+    .finiancial-actions .nav-tabs .nav-link.active::after {
+        left: 43px;
+        background-color: #c90000;
+    }
+    .finiancial-actions .nav-tabs .nav-link.withdraw-link.active::after {
+        left: 59px;
+        background-color: #c90000;
+    }
+}

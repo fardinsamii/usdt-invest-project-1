@@ -1,0 +1,45 @@
+/* Container card styling */
+.change-pass-actions .container-card {
+    border-radius: 15px;
+    -webkit-border-radius: 15px; /* Safari and older browsers */
+    background-color: #fff;
+}
+
+/* Input styling */
+.change-pass-actions .container-card input {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect input size */
+    width: 100%; /* Ensures input fields take full width */
+}
+
+/* Button container margin */
+.change-pass-actions .container-card .base-main-btn-content {
+    margin-top: 30px;
+}
+
+/* Button styling */
+.change-pass-actions .container-card .base-main-btn-content .btn {
+    background-color: #C90000; /* Explicit background-color for clarity */
+    color: #fff;
+    width: 100%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px; /* Safari and older browsers */
+    text-align: center; /* Ensure text is centered within the button */
+    padding: 10px 20px; /* Add padding for better button appearance */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease; /* Safari and older browsers */
+}
+
+.change-pass-actions .container-card .base-main-btn-content .btn:hover {
+    background-color: #a80000; /* Darken button on hover for better UX */
+}
+
+.change-pass-actions .container-card .base-main-btn-content .btn:active {
+    background-color: #8a0000; /* Even darker background on active state */
+}

@@ -1,0 +1,123 @@
+.custom_alert {
+  position: absolute;
+  left: 50%;
+  top: 100%; /* Adjust this to position the alert correctly */
+  background-color: #000000b3;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure the alert is on top */
+}
+
+.address_alert_copy {
+  position: absolute; /* Ensure this is set to absolute */
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure the alert is on top */
+}
+
+.top_part .form-select {
+    padding: 2px 30px 2px 10px; 
+    color: #fff;
+    background: #272a3d url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+    margin-bottom: 5px;
+}
+.circle_img{
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+}
+
+.contact-suuport-options {
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 90000;
+}
+
+/* popup lagnuage css */
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .custom-select {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background: #d45959a8;
+    border-radius: 17px;
+    padding: 3px 15px;
+    font-size: 14px;
+  }
+  .custom-select svg{
+    font-size: 12px;
+  }
+  .back-arrow-single {
+    background-color: #7a0c0c;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: -5px;
+  }
+  .back-arrow-single svg{
+    color: #fff;
+  }
+  .popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 270px;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px 10px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .popup-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    max-width: 720px;
+    margin: auto;
+  }
+  
+  .popup-option {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #c90000;
+    text-align: center;
+    background: #e9e9e9;
+    border-radius: 5px;
+  }
+  
+  .popup-option:hover {
+    background-color: #f0f0f0;
+  }
+  .search_language {
+    max-width: 720px;
+    margin: auto;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .search_language input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+  }
+  .search_language svg{
+    margin-left: -30px;
+  }

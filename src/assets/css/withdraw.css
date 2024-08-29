@@ -1,0 +1,162 @@
+
+  
+  .withdraw-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .withdraw-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .record {
+    color: #f60;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .subheader {
+    color: #f00;
+    font-size: 12px;
+    margin: 5px 0 10px 0;
+  }
+  
+  .balance-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .total-balance {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .balance-amount {
+    margin: 0;
+    font-size: 18px;
+    color: #f60;
+  }
+  
+  .withdrawal-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .method-usdt {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  .method-usdt input {
+    margin-right: 5px;
+  }
+  
+  .quota {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  .confirm-button {
+    background-color: #ff0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  .withdraw-actions .container_box{
+    border-radius: 15px;
+    background: #fff;
+  }
+  .withdraw-actions .logo_icon img{
+    max-width: 30px;
+    border-radius: 30px;
+  }
+  .withdraw-header .withdraw_title{
+    text-align: left;
+  }
+  .withdraw-actions .balance-box{
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .withdraw-actions .balance-box .total-balance{
+    font-size: 16px;
+  }
+  .withdraw-actions .balance-box .balance-amount{
+    color: #091234;
+    font-size: 16px;
+  }
+  .withdraw-actions .balance-box .balance-amount strong{
+    color: #C90000;
+    font-size: 25px;
+  }
+  .method-usdt{
+    gap: 10px;
+  }
+  .withdrawal-method p{
+    font-size: 14px;
+  }
+  .method-usdt .btn{
+    font-size: 12px;
+    border: 0px;
+    border: 1px solid #999;
+    color: #999;
+  }
+  .method-usdt .btn.active{
+    background: #C90000;
+    color: #fff;
+    border: 1px solid #C90000;
+  }
+
+  .withdraw-actions input {
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 14px;
+  }
+  .input-group:focus-visible , input:focus-visible{
+    outline: unset;
+  }
+  .withdraw-actions .confirm-button{
+    background: #C90000;
+    color: #fff;
+    border-radius: 40px;
+    width: 100%;
+  }
+  .charge_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+    font-size: 14px;
+    padding: 5px;
+  }
+  
