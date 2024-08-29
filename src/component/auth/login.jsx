@@ -68,12 +68,12 @@ function App() {
           <ul className="nav nav-tabs justify-content-around">
             <li className="nav-item">
               <Link className="nav-link active" to="/">
-                Email Login
+                {t("email_login")}
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/phone-login">
-                Phone Login
+              {t("phone_login")}
               </Link>
             </li>
           </ul>
@@ -82,14 +82,14 @@ function App() {
             <div className="tab-pane fade show active" id="emailLogin">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">{t("email")}</label>
                   <div className="form_input_wrap">
                   <FontAwesomeIcon icon={faEnvelope} />
                   <input
                     type="email"
                     className="form-control"
                     id="email"
-                    placeholder="E-mail"
+                    placeholder={t("email")}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -99,14 +99,14 @@ function App() {
                   )}
                 </div>
                 <div className="form-group">
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">{t("password")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faLock} />
                     <input
                       type="password"
                       className="form-control"
                       id="password"
-                      placeholder="Password"
+                      placeholder={t("password")}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
@@ -118,25 +118,25 @@ function App() {
                 </div>
                 <div className="form-check d-flex justify-content-center mt-3 login_reg_check">
                   <input 
-                    className="form-check-input" 
+                    className="form-check-input mb-0" 
                     type="checkbox" 
                     value="" 
                     id="flexCheckChecked" 
                     defaultChecked 
                   />
                   <label className="form-check-label" htmlFor="flexCheckChecked">
-                    Agree with our <a href="#">Terms of use</a> and <a href="#">Privacy agreement</a>
+                    {t("agree_with_our")} <a href="#">{t("terms_of_use")}</a> {t("and")} <a href="#">{t("privacy_agreement")}</a>
                   </label>
                 </div>
                 <div className="login-tools">
                 <div className="text-center mt-2">
                   <button type="submit" className="btn active btn-block">
-                    Sign In
+                    {t("sign_in")}
                   </button>
                 </div>
                 <div className="text-center mt-2">
                 <Link to="/register" className="btn btn-warning btn-block">
-                  Sign Up
+                  {t("sign_up")}
                 </Link>
                 </div>
                 </div>

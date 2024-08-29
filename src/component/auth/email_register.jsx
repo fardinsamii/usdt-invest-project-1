@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faShare } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 
+import { useTranslation } from "react-i18next";
 //all css
 import AuthTop from "../extra/authTopPart";
 import "../../assets/css/login.css";
@@ -28,11 +29,14 @@ function App() {
     password_confirmation: "",
   });
   const type = "email";
+  const { t, i18n } = useTranslation();
   const { enqueueSnackbar } = useSnackbar();
   const navigate = useNavigate();
   const location = useLocation(); // useLocation hook to access the URL
   const [isLoading, setIsLoading] = useState(false); // State to control loader visibility
-
+  const handleLanguageChange = (selectedLanguage) => {
+    i18n.changeLanguage(selectedLanguage);
+  };
   useEffect(() => {
     // Parse the URL parameters
     const params = new URLSearchParams(location.search);
@@ -105,12 +109,12 @@ function App() {
           <ul className="nav nav-tabs justify-content-around">
             <li className="nav-item">
               <Link className="nav-link nav-link-reg active" to="/email-register">
-                Register By Email
+              {t("RegisterByEmail")}
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link nav-link-reg" to="/phone-register">
-                Register By Phone
+                {t("RegisterByPhone")}
               </Link>
             </li>
           </ul>
@@ -118,14 +122,14 @@ function App() {
             <div className="tab-pane fade show active" id="emailLogin">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">{t("email")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faEnvelope} />
                     <input
                       type="email"
                       className="form-control"
                       id="email"
-                      placeholder="Enter email"
+                      placeholder={t("email")}
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -136,14 +140,14 @@ function App() {
                   )}
                 </div>
                 <div className="form-group">
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">{t("password")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faLock} />
                     <input
                       type="password"
                       className="form-control"
                       id="password"
-                      placeholder="Password"
+                      placeholder={t("password")}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
@@ -155,14 +159,14 @@ function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="password">Re-enter Password</label>
+                  <label htmlFor="password">{t("re_enter_password")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faLock} />
                     <input
                       type="password"
                       className="form-control"
                       id="password"
-                      placeholder="Re-enter Password"
+                      placeholder={t("re_enter_password")}
                       value={password_confirmation}
                       onChange={(e) => setPasswordconfirmation(e.target.value)}
                     />
@@ -176,14 +180,14 @@ function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="email">Invitation Code</label>
+                  <label htmlFor="email">{t("invitation_code")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faShare} />
                     <input
                       type="text"
                       className="form-control"
                       id="email"
-                      placeholder="Invitation Code"
+                      placeholder={t("invitation_code")}
                       value={invitation_code}
                       onChange={(e) => setInvitationcode(e.target.value)}
                     />
@@ -197,26 +201,26 @@ function App() {
 
                 <div className="form-check d-flex justify-content-center mt-3 login_reg_check">
                   <input 
-                    className="form-check-input" 
+                    className="form-check-input mb-0" 
                     type="checkbox" 
                     value="" 
                     id="flexCheckChecked" 
                     defaultChecked 
                   />
                   <label className="form-check-label" htmlFor="flexCheckChecked">
-                    Agree with our <a href="#">Terms of Use</a> and <a href="#">Privacy Agreement</a>
+                  {t("agree_with_our")} <a href="#">{t("terms_of_use")}</a> {t("and")} <a href="#">{t("privacy_agreement")}</a>
                   </label>
                 </div>
                 
                 <div className="login-tools">
                 <div className="text-center mt-2">
                   <button type="submit" className="btn active btn-block">
-                    Sign Up
+                    {t("sign_up")}
                   </button>
                 </div>
                 <div className="text-center mt-2">
                   <Link to="/" className="btn btn-block">
-                    Sign In
+                    {t("sign_in")}
                   </Link>
                 </div>
                 </div>

@@ -45,5 +45,21 @@
   "app": "App",
   "task_reset_countdown": "Task Reset Countdown",
   "no_task": "No Task",
-  "copy": "Copy"
+  "copy": "Copy",
+  "email_login": "Email Login",
+  "phone_login": "Phone Login",
+  "email": "Email",
+  "phone": "Phone",
+  "password": "Password",
+  "agree_with_our": "Agree with our",
+  "terms_of_use": "Terms of use",
+  "and": "and",
+  "privacy_agreement": "Privacy agreement",
+  "sign_in": "Sign In",
+  "sign_up": "Sign Up",
+  "re_enter_password": "Re-enter Password",
+  "invitation_Code": "Invitation Code",
+  "RegisterByEmail": "Register By Email",
+  "RegisterByPhone": "Register By Phone"
+
 }

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faShare } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 
+import { useTranslation } from "react-i18next";
 // All CSS
 import AuthTop from "../extra/authTopPart";
 import "../../assets/css/login.css";
@@ -28,11 +29,14 @@ function App() {
     password_confirmation: "",
   });
   const type = "phone";
+  const { t, i18n } = useTranslation();
   const { enqueueSnackbar } = useSnackbar();
   const navigate = useNavigate();
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(false); // State to control loader visibility
-
+  const handleLanguageChange = (selectedLanguage) => {
+    i18n.changeLanguage(selectedLanguage);
+  };
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const ic = params.get("ic");
@@ -103,12 +107,12 @@ function App() {
           <ul className="nav nav-tabs justify-content-around">
             <li className="nav-item">
               <Link className="nav-link nav-link-reg" to="/register">
-                Register By Email
+                {t("RegisterByEmail")}
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link nav-link-reg active" to="/phone-register">
-                Register By Phone
+              {t("RegisterByPhone")}
               </Link>
             </li>
           </ul>
@@ -116,14 +120,14 @@ function App() {
             <div className="tab-pane fade show active" id="phoneRegister">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="phone">Phone</label>
+                  <label htmlFor="phone">{t("phone")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faMobile} />
                     <input
                       type="text"
                       className="form-control"
                       id="phone"
-                      placeholder="Phone"
+                      placeholder={t("phone")}
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                     />
@@ -134,14 +138,14 @@ function App() {
                   )}
                 </div>
                 <div className="form-group">
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">{t("password")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faLock} />
                     <input
                       type="password"
                       className="form-control"
                       id="password"
-                      placeholder="Password"
+                      placeholder={t("password")}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
@@ -153,14 +157,14 @@ function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="password_confirmation">Re-enter Password</label>
+                  <label htmlFor="password_confirmation">{t("re_enter_password")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faLock} />
                     <input
                       type="password"
                       className="form-control"
                       id="password_confirmation"
-                      placeholder="Re-enter Password"
+                      placeholder={t("re_enter_password")}
                       value={password_confirmation}
                       onChange={(e) => setPasswordConfirmation(e.target.value)}
                     />
@@ -174,14 +178,14 @@ function App() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="invitation_code">Invitation Code</label>
+                  <label htmlFor="invitation_code">{t("invitation_code")}</label>
                   <div className="form_input_wrap">
                     <FontAwesomeIcon icon={faShare} />
                     <input
                       type="text"
                       className="form-control"
                       id="invitation_code"
-                      placeholder="Invitation Code"
+                      placeholder={t("invitation_code")}
                       value={invitation_code}
                       onChange={(e) => setInvitationCode(e.target.value)}
                     />
@@ -196,26 +200,26 @@ function App() {
 
                 <div className="form-check d-flex justify-content-center mt-3 login_reg_check">
                   <input 
-                    className="form-check-input" 
+                    className="form-check-input mb-0" 
                     type="checkbox" 
                     value="" 
                     id="flexCheckChecked" 
                     defaultChecked 
                   />
                   <label className="form-check-label" htmlFor="flexCheckChecked">
-                    Agree with our <a href="#">Terms of Use</a> and <a href="#">Privacy Agreement</a>
+                  {t("agree_with_our")} <a href="#">{t("terms_of_use")}</a> {t("and")} <a href="#">{t("privacy_agreement")}</a>
                   </label>
                 </div>
 
                 <div className="login-tools">
                   <div className="text-center mt-2">
                     <button type="submit" className="btn active btn-block">
-                      Sign Up
+                      {t("sign_up")}
                     </button>
                   </div>
                   <div className="text-center mt-2">
                     <Link to="/" className="btn btn-block">
-                      Sign In
+                    {t("sign_in")}
                     </Link>
                   </div>
                 </div>

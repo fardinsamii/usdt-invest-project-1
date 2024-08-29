@@ -45,5 +45,20 @@
   "app": "অ্যাপ",
   "task_reset_countdown": "টাস্ক রিসেট কাউন্টডাউন",
   "no_task": "কোন টাস্ক নেই",
-  "copy": "কপি"
+  "copy": "কপি",
+  "email_login": "ইমেইল লগইন",
+  "phone_login": "ফোন লগইন",
+  "email": "ইমেইল",
+  "phone": "ফোন নম্বর",
+  "password": "পাসওয়ার্ড",
+  "agree_with_our": "আমাদের সাথে একমত",
+  "terms_of_use": "ব্যবহারের শর্তাবলী",
+  "and": "এবং",
+  "privacy_agreement": "গোপনীয়তা চুক্তি",
+  "sign_in": "সাইন ইন করুন",
+  "sign_up": "সাইন আপ করুন",
+  "re_enter_password": "পাসওয়ার্ড পুনরায় লিখুন",
+  "invitation_Code": "আমন্ত্রণ কোড",
+  "RegisterByEmail": "ইমেল নিবন্ধন করুন",
+  "RegisterByPhone": "ফোনে নিবন্ধন করুন"
 }
